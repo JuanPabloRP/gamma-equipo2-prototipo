@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Donaciones</title>
+  </head>
+  <body>
+    <main class="donaciones">
+      <header>
+        <div class="titulo">
+          <h1>Filantropia eafit</h1>
+        </div>
+        <div class="frase">
+          <h3>
+            <strong>Transformando vidas</strong> a través de tus aportes para
+            que alguién más alcance sus sueños
+          </h3>
+        </div>
+      </header>
+      <section class="contenido">
+        <div class="selectorpagina">
+          <h3>Cuentanos sobre tí</h3>
+          <h3>¿Qué te motiva?</h3>
+        </div>
+        <div class="identificación">
+            <div class="identificacion__titulo">
+                <h2>Documento de identificación</h2>
+            </div>
+          <div class="selector__pais">
+            <form action="selectpais">
+              <label for="pais">País</label> <br />
+              <select name="paises" id="pais">
+                <option value="ecuador">Ecuador</option>
+                <option value="mexico">México</option>
+                <option value="colombia">Colombia</option>
+                <option value="peru">Perú</option>
+                <option value="argentina">Argentina</option>
+                <option value="bolivia">Bolivia</option>
+              </select>
+            </form>
+          </div>
+          <div class="selector__documento">
+            <form action="selectdocumento">
+                <label for="documento">Tipo de documento</label> <br>
+                <select name="documentos" id="documento">
+                    <option value="cc">Cédula de ciudadania</option>
+                    <option value="ti">Tarjeta de identidad</option>
+                    <option value="ce">Cédula de extranjería</option>
+                </select>
+            </form>
+          </div>
+          <div class="numero__documento">
+            <form action="numerodocumento">
+                <label for="numerodocumento">Número de documento</label> <br>
+                <input  id="numero-documento" type="text" name="campotexto">
+            </form>
+
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
