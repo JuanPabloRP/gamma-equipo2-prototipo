@@ -6,4 +6,44 @@
     padding: 0;
 }
 
+.history {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+ 
+    
+}
 
+.page {
+    display: flex;
+    position:relative;
+    background-color: $background-color;
+    justify-content: space-around;
+
+    &__info {
+        font-style: $font-tertiary;
+        font-size: $font-size-xs;
+        text-align: center;
+        margin-block-start: 18px;
+
+        &--sp {
+            font-family:$font-alternate;
+        }
+    }
+    img {
+        margin:20px;
+        max-width: 180px;
+        margin: 45px;
+        width: auto;
+        justify-content: center;
+    }
+}
+
+
+.document {
+    font-family: $font-tertiary;
+    font-size: $font-size-m;
+
+}
