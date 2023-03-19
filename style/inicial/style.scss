@@ -1,0 +1,280 @@
+@import '../index';
+
+body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: $background-color;
+
+	//background-image: $background-image;
+}
+
+.navbar {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(233, 248, 249, 0.97);
+	padding: 2rem;
+	top: 0;
+	position: sticky;
+	z-index: 1000;
+
+	&__title {
+		width: 100%;
+		font-size: $font-size-l;
+		text-align: center;
+		padding: 0 2rem;
+	}
+
+	&__go-to {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		gap: $gap;
+		font-size: $font-size-s;
+
+		&__option {
+			& a {
+				border-bottom: 1px black solid;
+				//border-left: 1px black solid;
+			}
+
+			& a:hover {
+				transform: scale(1.1);
+				cursor: pointer;
+			}
+
+			& a:active {
+				transform: scale(1.1);
+				cursor: pointer;
+				color: $secundary-color;
+				border-bottom: 1px $secundary-color solid;
+			}
+
+			& a:visited {
+				transform: scale(1.1);
+				cursor: pointer;
+				color: $secundary-color;
+				border-bottom: 1px $secundary-color solid;
+			}
+		}
+	}
+}
+
+.header {
+	background-color: $background-color;
+	position: relative;
+	margin: 2rem 0;
+
+	&__img {
+		width: 90%;
+		margin: auto;
+		border-radius: $border-radius;
+	}
+	&__title {
+		position: absolute;
+		top: 70%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: $font-size-lr;
+		text-align: center;
+		width: 80%;
+
+		margin: auto;
+		background-color: $background-color;
+		color: $primary-color;
+		transition: all 0.5s;
+	}
+
+	&__title:hover {
+		color: $secundary-color;
+		background-color: $primary-color;
+	}
+}
+
+aside {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 10px;
+	width: 100%;
+	z-index: 10000;
+	position: sticky;
+	top: 140px;
+	& .botonDonar {
+		padding: 0.5rem;
+		border-radius: $border-radius;
+		background-color: $secundary-color;
+		animation: cambio_color 5s linear infinite;
+	}
+
+	& .botonDonar:hover {
+		transform: scale(1.03);
+	}
+}
+
+@keyframes cambio_color {
+	0% {
+		background-color: $secundary-color;
+	}
+	50% {
+		background-color: $tertiary-color;
+	}
+}
+
+.content {
+	background-color: $background-color;
+	margin: 2rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: calc($gap * 5);
+
+	a {
+		color: $secundary-color;
+		cursor: pointer;
+	}
+}
+
+.content__info {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	& article {
+		width: 100%;
+		padding: 2rem;
+		& h2 {
+			text-align: center;
+			font-size: $font-size-l;
+			font-weight: bold;
+			padding: 0.5rem 0;
+		}
+
+		& iframe {
+			width: 90%;
+			max-width: 500px;
+			margin: auto;
+		}
+	}
+}
+
+.content__causas {
+	padding: 2rem;
+	width: 100%;
+	& h2 {
+		text-align: center;
+		font-size: $font-size-l;
+		font-weight: bold;
+	}
+}
+
+.carousel {
+	width: 100%;
+	max-width: 500px;
+	margin: auto;
+
+	&-caption {
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: $border-radius;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+
+		& p,
+		& a {
+			text-align: center;
+			word-wrap: normal;
+		}
+	}
+}
+
+.prev,
+.next {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+
+.content__testimonios {
+	width: 100%;
+	max-width: 500px;
+	& h2 {
+		text-align: center;
+	}
+
+	& iframe {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+.content__informes,
+.informes {
+	width: 100%;
+	&__title {
+		padding: 2rem;
+	}
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: calc($gap * 3);
+	}
+
+	&__informe {
+		width: 90%;
+		max-width: 300px;
+	}
+
+	&__llevarA {
+		position: relative;
+		transition: all 0.5s ease;
+	}
+
+	&__imagen {
+		position: relative;
+		transition: all 0.5s ease;
+	}
+
+	&__imagen:hover,
+	&__llevarA:hover {
+		opacity: 0.8;
+	}
+
+	&__texto {
+		opacity: 0;
+		display: none;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: $secundary-color;
+		background-color: $primary-color;
+		padding: 1rem;
+		border-radius: $border-radius;
+		font-size: $font-size-l;
+		transition: all 0.5s ease;
+	}
+
+	&__llevarA:hover &__texto {
+		display: block;
+		opacity: 1;
+		transition: all 0.5s ease;
+	}
+}
+
+.content__noticias {
+	width: 100;
+}
+
+.footer {
+	background-color: $background-color;
+}
