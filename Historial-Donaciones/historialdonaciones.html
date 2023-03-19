@@ -19,9 +19,8 @@
     </header>
     
     <div class="document">
-    <h1>Consulta aqui tus certificados de donacion</h1>
-    <p class="document__tipe">
-        Tipo de documento <br>
+    <h1 class="document__consultation">Consulta aqui tus certificados de donacion</h1>
+    <p class="document__tipe">Tipo de documento<br>
         <select class="document__se">
           <option></option>
           <option>Documento identidad país de origen</option>
@@ -33,18 +32,19 @@
           <option>Cedula de Extranjeria</option>
         </select><br>
 
-        <label class="info" for="number-doc">Número de documento</label><br>
-        <input type="text" name="number-doc"><br>
+        <label class="document__tipe" for="number-doc">Número de documento</label><br>
+        <input class="document__tipe--num" type="text" name="number-doc"><br>
 
-        <input class="button" type="submit" value="Regresar">
-        <input class="button" type="submit" value="Consultar certificados">
+        <input class="left" type="submit" value="Regresar">
+        <input class="right" type="submit" value="Consultar certificados">
 
         <fieldset class="donation">
             <p>Historial de donaciones</p>  
+                
         </fieldset>
    </div>
    <footer class="footerinformation">
-    <div class="footer information__date">
+    <div class="footerinformation__date">
         <div>
             <h2>Filantropia</h2>
             <p>Universidad EAFIT</p>

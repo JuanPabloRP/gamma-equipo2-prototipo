@@ -38,6 +38,86 @@
 .document {
   font-family: "Poppins", sans-serif;
   font-size: 2.8vh;
+  text-align: center;
+}
+.document__consultation {
+  font-size: 5vh;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 18px;
+  margin: 18px;
+  background-color: #181823;
+  color: white;
+}
+.document__tipe {
+  font-family: "Poppins", sans-serif;
+  margin: 12px;
+  height: auto;
+}
+.document__tipe--num {
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 4px;
+  background-color: #e9f8f9;
+  height: 4vh;
+}
+.document__se {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid rgb(83, 83, 83);
+  border-radius: 4px;
+  background-color: #e9f8f9;
+  height: 4vh;
+}
+
+.left {
+  position: relative;
+  font-size: 2.4vh;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #181823;
+  color: white;
+  width: 8vw;
+  height: 4vh;
+  cursor: pointer;
+}
+
+.right {
+  position: relative;
+  font-size: 2.4vh;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #537fe7;
+  color: white;
+  width: 15vw;
+  height: 4vh;
+  cursor: pointer;
+}
+
+.donation {
+  font-size: 2.8vh;
+  font-family: "Sintony", sans-serif;
+  background-color: #537fe7;
+  font-weight: 800;
+}
+
+.footerinformation {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  background-color: #e9f8f9;
+  padding: 10px 10px 50px 10px;
+  text-align: center;
+}
+
+.help {
+  font-family: "Sintony", sans-serif;
+  background-color: #537fe7;
+  color: white;
+  font-weight: 800;
+  text-align: center;
 }
 
 /*# sourceMappingURL=historialdonaciones.css.map */

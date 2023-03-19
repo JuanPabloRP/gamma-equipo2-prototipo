@@ -29,7 +29,7 @@
         margin-block-start: 18px;
 
         &--sp {
-            font-family:$font-alternate;
+            font-family:$font-alternate; 
         }
     }
     img {
@@ -45,5 +45,87 @@
 .document {
     font-family: $font-tertiary;
     font-size: $font-size-m;
+    text-align: center;
+  
+        &__consultation {
+            font-size: $font-size-l;
+            font-family: $font-primary;
+            text-align: center;
+            border: 1px solid rgb(83, 83, 83);
+            border-radius: 18px;
+            margin: 18px;
+            background-color: $primary-color;
+            color: white;
+        }
 
+        &__tipe {
+            font-family: $font-tertiary;
+            margin: 12px;
+            height: auto;
+
+            &--num {
+                border: 1px solid rgb(83, 83, 83);
+                border-radius: 4px;
+                background-color: $background-color; 
+                height:4vh; 
+            }
+        }
+        &__se {
+            font-family: $font-tertiary;
+            border: 1px solid rgb(83, 83, 83);
+            border-radius: 4px;
+            background-color: $background-color;    
+            height:4vh;      
+        }
+}
+
+.left {
+    position: relative;
+    font-size: $font-size-s;
+    text-align: center;
+    font-family: $font-primary;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: $primary-color;
+    color: white;
+    width: 8vw;
+    height:4vh; 
+    cursor: pointer;
+}
+
+.right {
+    position: relative;
+    font-size: $font-size-s;
+    text-align: center;
+    font-family: $font-primary;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: $secundary-color;
+    color: white;
+    width: 15vw;
+    height:4vh; 
+    cursor: pointer;
+}
+
+.donation {
+    font-size: $font-size-m;
+    font-family: $font-cuartiary;
+    background-color: $secundary-color;
+    font-weight: 800;
+}
+
+.footerinformation {
+    display: block;
+    font-family: $font-primary;
+    background-color: $background-color;
+    padding: 10px 10px 50px 10px;
+    text-align: center;
+}
+
+.help {
+    font-family: $font-cuartiary;
+    background-color: $secundary-color;
+    color: white;
+    font-weight: 800;
+    text-align: center;
 }
