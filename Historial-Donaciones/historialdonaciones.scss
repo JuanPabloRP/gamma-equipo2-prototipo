@@ -30,6 +30,7 @@
 
         &--sp {
             font-family:$font-alternate; 
+            font-weight: 700;
         }
     }
     img {
@@ -60,14 +61,14 @@
 
         &__tipe {
             font-family: $font-tertiary;
-            margin: 12px;
             height: auto;
 
             &--num {
                 border: 1px solid rgb(83, 83, 83);
                 border-radius: 4px;
                 background-color: $background-color; 
-                height:4vh; 
+                height:4vh;
+                margin: 5px; 
             }
         }
         &__se {
@@ -79,47 +80,84 @@
         }
 }
 
-.left {
-    position: relative;
-    font-size: $font-size-s;
-    text-align: center;
-    font-family: $font-primary;
-    border-radius: 5px;
-    margin: 20px;
-    background-color: $primary-color;
-    color: white;
-    width: 8vw;
-    height:4vh; 
-    cursor: pointer;
-}
 
-.right {
-    position: relative;
-    font-size: $font-size-s;
-    text-align: center;
-    font-family: $font-primary;
-    border-radius: 5px;
-    margin: 20px;
-    background-color: $secundary-color;
-    color: white;
-    width: 15vw;
-    height:4vh; 
-    cursor: pointer;
-}
+    .left {
+        font-size: $font-size-s;
+        text-align: center;
+        font-family: $font-primary;
+        border-radius: 5px;
+        margin: 4px;
+        background-color: $primary-color;
+        color: white;
+        width: auto;
+        height:4vh; 
+        cursor: pointer;
+    }
+
+   .right {
+        font-size: $font-size-s;
+        text-align: center;
+        font-family: $font-primary;
+        border-radius: 5px;
+        margin: 4px;
+        background-color: $secundary-color;
+        color: white;
+        width: auto;
+        height:4vh; 
+        cursor: pointer;
+    }
+
 
 .donation {
-    font-size: $font-size-m;
-    font-family: $font-cuartiary;
-    background-color: $secundary-color;
-    font-weight: 800;
+    display: block;
+    background-color: $background-color;
+    height:50vh;    
+  
+        &__do {
+            font-size: $font-size-m;
+            font-family: $font-cuartiary;
+            background-color: $secundary-color;
+            font-weight: 800;
+            height:4vh; 
+            text-align: center;     
+        }
+
+
+   
 }
 
 .footerinformation {
-    display: block;
+    margin-top: 30px;
+    display: block; 
     font-family: $font-primary;
     background-color: $background-color;
     padding: 10px 10px 50px 10px;
-    text-align: center;
+    text-align: center; 
+    justify-content: space-between;
+    align-items: flex-start;  
+    
+
+    &__filantropia {
+        display: inline-block;
+        padding: 30px;
+    }
+
+    &__direction {
+        display: inline-block;
+        padding: 30px;
+    }
+
+    &__phone {
+        display: inline-block;
+        padding: 30px;
+    }
+
+    &__adress {
+        display: inline-block;
+        padding: 30px;
+        align-items: flex-start;
+    
+    }
 }
 
 .help {
@@ -128,4 +166,6 @@
     color: white;
     font-weight: 800;
     text-align: center;
+    height:6vh;
+    flex-direction: row;
 }

@@ -26,6 +26,7 @@
 }
 .page__info--sp {
   font-family: "Ephesis", cursive;
+  font-weight: 700;
 }
 .page img {
   margin: 20px;
@@ -52,7 +53,6 @@
 }
 .document__tipe {
   font-family: "Poppins", sans-serif;
-  margin: 12px;
   height: auto;
 }
 .document__tipe--num {
@@ -60,6 +60,7 @@
   border-radius: 4px;
   background-color: #e9f8f9;
   height: 4vh;
+  margin: 5px;
 }
 .document__se {
   font-family: "Poppins", sans-serif;
@@ -70,46 +71,71 @@
 }
 
 .left {
-  position: relative;
   font-size: 2.4vh;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   border-radius: 5px;
-  margin: 20px;
+  margin: 4px;
   background-color: #181823;
   color: white;
-  width: 8vw;
+  width: auto;
   height: 4vh;
   cursor: pointer;
 }
 
 .right {
-  position: relative;
   font-size: 2.4vh;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   border-radius: 5px;
-  margin: 20px;
+  margin: 4px;
   background-color: #537fe7;
   color: white;
-  width: 15vw;
+  width: auto;
   height: 4vh;
   cursor: pointer;
 }
 
 .donation {
+  display: block;
+  background-color: #e9f8f9;
+  height: 50vh;
+}
+.donation__do {
   font-size: 2.8vh;
   font-family: "Sintony", sans-serif;
   background-color: #537fe7;
   font-weight: 800;
+  height: 4vh;
+  text-align: center;
 }
 
 .footerinformation {
+  margin-top: 30px;
   display: block;
   font-family: "Montserrat", sans-serif;
   background-color: #e9f8f9;
   padding: 10px 10px 50px 10px;
   text-align: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footerinformation__filantropia {
+  display: inline-block;
+  padding: 30px;
+}
+.footerinformation__direction {
+  display: inline-block;
+  padding: 30px;
+}
+.footerinformation__phone {
+  display: inline-block;
+  padding: 30px;
+}
+.footerinformation__adress {
+  display: inline-block;
+  padding: 30px;
+  align-items: flex-start;
 }
 
 .help {
@@ -118,6 +144,8 @@
   color: white;
   font-weight: 800;
   text-align: center;
+  height: 6vh;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=historialdonaciones.css.map */
