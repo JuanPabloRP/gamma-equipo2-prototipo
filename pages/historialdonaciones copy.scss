@@ -1,0 +1,171 @@
+@import 'style/index.scss'; 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.history {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+ 
+    
+}
+
+.page {
+    display: flex;
+    position:relative;
+    background-color: $background-color;
+    justify-content: space-around;
+
+    &__info {
+        font-style: $font-tertiary;
+        font-size: $font-size-xs;
+        text-align: center;
+        margin-block-start: 18px;
+
+        &--sp {
+            font-family:$font-alternate; 
+            font-weight: 700;
+        }
+    }
+    img {
+        margin:20px;
+        max-width: 180px;
+        margin: 45px;
+        width: auto;
+        justify-content: center;
+    }
+}
+
+
+.document {
+    font-family: $font-tertiary;
+    font-size: $font-size-m;
+    text-align: center;
+  
+        &__consultation {
+            font-size: $font-size-l;
+            font-family: $font-primary;
+            text-align: center;
+            border: 1px solid rgb(83, 83, 83);
+            border-radius: 18px;
+            margin: 18px;
+            background-color: $primary-color;
+            color: white;
+        }
+
+        &__tipe {
+            font-family: $font-tertiary;
+            height: auto;
+
+            &--num {
+                border: 1px solid rgb(83, 83, 83);
+                border-radius: 4px;
+                background-color: $background-color; 
+                height:4vh;
+                margin: 5px; 
+            }
+        }
+        &__se {
+            font-family: $font-tertiary;
+            border: 1px solid rgb(83, 83, 83);
+            border-radius: 4px;
+            background-color: $background-color;    
+            height:4vh;      
+        }
+}
+
+
+    .left {
+        font-size: $font-size-s;
+        text-align: center;
+        font-family: $font-primary;
+        border-radius: 5px;
+        margin: 4px;
+        background-color: $primary-color;
+        color: white;
+        width: auto;
+        height:4vh; 
+        cursor: pointer;
+    }
+
+   .right {
+        font-size: $font-size-s;
+        text-align: center;
+        font-family: $font-primary;
+        border-radius: 5px;
+        margin: 4px;
+        background-color: $secundary-color;
+        color: white;
+        width: auto;
+        height:4vh; 
+        cursor: pointer;
+    }
+
+
+.donation {
+    display: block;
+    background-color: $background-color;
+    height:50vh;    
+  
+        &__do {
+            font-size: $font-size-m;
+            font-family: $font-cuartiary;
+            background-color: $secundary-color;
+            font-weight: 800;
+            height:4vh; 
+            text-align: center;     
+        }
+
+
+   
+}
+
+.footerinformation {
+    margin-top: 30px;
+    display: block; 
+    font-family: $font-primary;
+    background-color: $background-color;
+    padding: 10px 10px 50px 10px;
+    text-align: center; 
+    justify-content: space-between;
+    align-items: flex-start;  
+    
+
+    &__filantropia {
+        display: inline-block;
+        padding: 30px;
+    }
+
+    &__direction {
+        display: inline-block;
+        padding: 30px;
+    }
+
+    &__phone {
+        display: inline-block;
+        padding: 30px;
+    }
+
+    &__adress {
+        display: inline-block;
+        padding: 30px;
+        align-items: flex-start;
+    
+    }
+}
+
+.help {
+    font-family: $font-cuartiary;
+    background-color: $secundary-color;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    height:6vh;
+    flex-direction: row;
+}
