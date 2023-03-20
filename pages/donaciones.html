@@ -13,7 +13,7 @@
         <div class="titulo">
           <h1>Filantropia eafit</h1>
         </div>
-        <div class="frase">
+        <div class="frasetop">
           <h3>
             <strong>Transformando vidas</strong> a través de tus aportes para
             que alguién más alcance sus sueños
@@ -26,10 +26,10 @@
           <h3>¿Qué te motiva?</h3>
         </div>
         <div class="identificación">
-            <div class="identificacion__titulo">
-                <h2>Documento de identificación</h2>
-            </div>
-          <div class="selector__pais">
+          <div class="identificacion__titulo">
+            <h2>Documento de identificación</h2>
+          </div>
+          <div class="identificacion__pais">
             <form action="selectpais">
               <label for="pais">País</label> <br />
               <select name="paises" id="pais">
@@ -42,25 +42,184 @@
               </select>
             </form>
           </div>
-          <div class="selector__documento">
+          <div class="identificacion__documento">
             <form action="selectdocumento">
-                <label for="documento">Tipo de documento</label> <br>
-                <select name="documentos" id="documento">
-                    <option value="cc">Cédula de ciudadania</option>
-                    <option value="ti">Tarjeta de identidad</option>
-                    <option value="ce">Cédula de extranjería</option>
-                </select>
+              <label for="documento">Tipo de documento</label> <br />
+              <select name="documentos" id="documento">
+                <option value="cc">Cédula de ciudadania</option>
+                <option value="ti">Tarjeta de identidad</option>
+                <option value="ce">Cédula de extranjería</option>
+              </select>
             </form>
           </div>
-          <div class="numero__documento">
+          <div class="identificacion__numero">
             <form action="numerodocumento">
-                <label for="numerodocumento">Número de documento</label> <br>
-                <input  id="numero-documento" type="text" name="campotexto">
+              <label for="numerodocumento">Número de documento</label> <br />
+              <input id="numero-documento" type="text" name="campotexto" />
             </form>
-
+          </div>
+        </div>
+        <div class="datos">
+          <div class="datos__titulo">
+            <h2>Datos personales</h2>
+          </div>
+          <div class="datos__primernombre">
+            <form action="primernombre">
+              <label for="primernombre">Primer nombre</label> <br />
+              <input id="primer-nombre" type="text" name="campotexto" />
+            </form>
+            <div class="datos__segundonombre">
+              <form action="segundonombre">
+                <label for="segundonombre">Segundo nombre</label> <br />
+                <input id="segundo-nombre" type="text" name="campotexto" />
+              </form>
+            </div>
+            <div class="datos__primerapellido">
+              <form action="primerapellido">
+                <label for="primerapellido">Primer apellido</label> <br />
+                <input id="primer-apellido" type="text" name="campotexto" />
+              </form>
+            </div>
+            <div class="datos__segundoapellido">
+              <form action="segundoapellido">
+                <label for="segundoapellido">Segundo apellido</label> <br />
+                <input id="segundo-apellido" type="text" name="campotexto" />
+              </form>
+            </div>
+            <div class="datos__genero">
+              <form action="seleccionargenero">
+                <label for="genero">Género</label> <br />
+                <select name="generos" id="genero">
+                  <option value="masculino">Masculino</option>
+                  <option value="femenino">Femenino</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </form>
+            </div>
+            <div class="datos__estadocivil">
+              <form action="seleccionestadocivil">
+                <label for="estadocivil">Estado civil</label> <br />
+                <select name="estadocivil" id="estcivil">
+                  <option value="soltero">Soltero</option>
+                  <option value="casado">Casado</option>
+                  <option value="divorciado">Divorciado</option>
+                  <option value="viudo">Viudo</option>
+                </select>
+              </form>
+            </div>
+            <div class="datos__telefono">
+              <form action="numerotelefono">
+                <label for="telefono">Número de telefono</label> <br />
+                <input id="telefono" type="text" name="campotexto" />
+              </form>
+            </div>
+            <div class="datos__correo">
+              <form action="direccioncorreo">
+                <label for="direccioncorreo">Correo electrónico</label> <br />
+                <input id="correo" type="text" name="campotexto" />
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="nacimiento">
+          <div class="nacimiento__titulo">
+            <h2>Nacimiento</h2>
+          </div>
+          <div class="nacimiento__fechadenacimiento">
+            <form action="fechadenacimiento">
+              <label for="fechadenacimiento">Fecha de nacimiento</label> <br />
+              <input id="fechadenacimiento" type="text" name="campotexto" />
+            </form>
+          </div>
+          <div class="nacimiento__pais">
+            <form action="selectpais">
+              <label for="pais">País de nacimienta</label> <br />
+              <select name="paises" id="pais">
+                <option value="ecuador">Ecuador</option>
+                <option value="mexico">México</option>
+                <option value="colombia">Colombia</option>
+                <option value="peru">Perú</option>
+                <option value="argentina">Argentina</option>
+                <option value="bolivia">Bolivia</option>
+              </select>
+            </form>
+          </div>
+          <div class="nacimiento__departamento">
+            <form action="departamentonacimiento">
+              <label for="depnacimiento">Departamento de nacimiento</label>
+              <br />
+              <input id="depnacimiento" type="text" name="campotexto" />
+            </form>
+          </div>
+          <div class="nacimiento__ciudad">
+            <form action="ciudadnacimiento">
+              <label for="ciunacimiento">Ciudad de nacimiento</label> <br />
+              <input id="ciunacimiento" type="text" name="campotexto" />
+            </form>
+          </div>
+        </div>
+        <div class="residencia">
+          <div class="residencia__titulo">
+            <h2>Residencia</h2>
+          </div>
+          <div class="residencia__direccion">
+            <form action="direccion">
+              <label for="diresidencia">Dirección de residencia</label> <br />
+              <input id="diresidencia" type="text" name="campotexto" />
+            </form>
+          </div>
+          <div class="residencia__paisresidencia">
+            <form action="selectpais">
+              <label for="pais">País de nacimiento</label> <br />
+              <select name="paises" id="pais">
+                <option value="ecuador">Ecuador</option>
+                <option value="mexico">México</option>
+                <option value="colombia">Colombia</option>
+                <option value="peru">Perú</option>
+                <option value="argentina">Argentina</option>
+                <option value="bolivia">Bolivia</option>
+              </select>
+            </form>
+          </div>
+          <div class="residencia__departamento">
+            <form action="departamentoresidencia">
+              <label for="depresidencia">Departamento de residencia </label>
+              <br />
+              <input id="depresidencia" type="text" name="campotexto" />
+            </form>
+          </div>
+          <div class="residencia__ciudad">
+            <form action="ciudadresidencia">
+              <label for="ciuresidencia">Ciudad de residencia </label> <br />
+              <input id="ciuresidencia" type="text" name="campotexto" />
+            </form>
           </div>
         </div>
       </section>
+      <footer>
+        <div class="infogeneral">
+          <h2>Filantropía</h2>
+          <h3>Universidad eafit</h3>
+          <h3>www.eafit.edu/filantropia</h3>
+        </div>
+        <div class="contacto">
+          <h2>Teléfono</h2>
+          <h3>(574)261 9500Ext. 9297</h3>
+        </div>
+        <div class="direccion">
+          <h2>Dirección</h2>
+          <h3>Carrera 48 C 10 sur 106</h3>
+          <h3>Casa 8 Egresados</h3>
+          <h3>Barrio la Aguacatala II</h3>
+          <h3>Medellín-Colombia</h3>
+        </div>
+        <div class="email">
+          <h3>cfilantropia@eafit.edu.co</h3>
+        </div>
+        <div class="frasebot">
+          <h2>Ayuda a volar,empieza a donar</h2>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
