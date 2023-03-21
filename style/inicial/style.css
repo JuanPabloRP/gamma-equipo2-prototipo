@@ -153,6 +153,7 @@ body {
   top: 0;
   position: sticky;
   z-index: 1000;
+  transition: all 0.5s;
 }
 .navbar__title {
   width: 100%;
@@ -169,7 +170,7 @@ body {
   font-size: 1.5rem;
 }
 .navbar__go-to__option a {
-  border-bottom: 1px black solid;
+  border-bottom: 1px #181823 solid;
 }
 .navbar__go-to__option a:hover {
   transform: scale(1.1);
@@ -186,6 +187,17 @@ body {
   cursor: pointer;
   color: #537fe7;
   border-bottom: 1px #537fe7 solid;
+}
+
+.navbar:hover {
+  background-color: #181823;
+  color: #e9f8f9;
+}
+.navbar:hover > h1 {
+  color: #537fe7;
+}
+.navbar:hover__go-to__option > a {
+  border-bottom: 1px #e9f8f9 solid;
 }
 
 .header {
@@ -265,6 +277,7 @@ aside .botonDonar:hover {
 }
 .content__info article {
   width: 100%;
+  max-width: 730px;
   padding: 2rem;
 }
 .content__info article h2 {
@@ -304,6 +317,7 @@ aside .botonDonar:hover {
   text-align: center;
 }
 .carousel-caption p, .carousel-caption a {
+  width: 100%;
   text-align: center;
   word-wrap: normal;
 }
@@ -387,11 +401,100 @@ aside .botonDonar:hover {
 }
 
 .content__noticias {
-  width: 100;
+  width: 90%;
+}
+
+.content__preguntas {
+  width: 100%;
+}
+
+.accordion {
+  margin: auto;
+  width: 90%;
+  max-width: 900px;
+}
+.accordion-item {
+  margin: 0.5rem;
+}
+.accordion-body {
+  font-size: 1.5rem;
+}
+.accordion-button {
+  font-size: 1.5rem;
+}
+
+.content__contacto,
+.contacto {
+  width: 100%;
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  gap: 1rem;
+}
+.content__contacto__container-escribenos,
+.contacto__container-escribenos {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.content__contacto__email-filantropia,
+.contacto__email-filantropia {
+  cursor: pointer;
+  color: #181823 !important;
+}
+.content__contacto__email-filantropia:hover,
+.contacto__email-filantropia:hover {
+  border-bottom: 1px solid #181823;
+}
+.content__contacto__container-info,
+.contacto__container-info {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.content__contacto__card,
+.contacto__card {
+  min-width: 350px;
+  min-height: 300px;
+  border: 2px solid #c0eef2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content__contacto__img,
+.contacto__img {
+  width: 100%;
+  max-width: 130px;
 }
 
 .footer {
   background-color: #e9f8f9;
+}
+
+@media (min-width: 768px) {
+  .header__title {
+    font-size: 4rem;
+  }
+  .content__info article iframe {
+    max-width: 500px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) {
+  .header__title {
+    font-weight: bold;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

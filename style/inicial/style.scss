@@ -21,6 +21,7 @@ body {
 	top: 0;
 	position: sticky;
 	z-index: 1000;
+	transition: all 0.5s;
 
 	&__title {
 		width: 100%;
@@ -39,7 +40,7 @@ body {
 
 		&__option {
 			& a {
-				border-bottom: 1px black solid;
+				border-bottom: 1px $primary-color solid;
 				//border-left: 1px black solid;
 			}
 
@@ -60,6 +61,23 @@ body {
 				cursor: pointer;
 				color: $secundary-color;
 				border-bottom: 1px $secundary-color solid;
+			}
+		}
+	}
+}
+
+.navbar:hover {
+	background-color: $primary-color;
+	color: $background-color;
+
+	& > h1 {
+		color: $secundary-color;
+	}
+
+	&__go-to {
+		&__option {
+			& > a {
+				border-bottom: 1px $background-color solid;
 			}
 		}
 	}
@@ -147,6 +165,7 @@ aside {
 	align-items: center;
 	& article {
 		width: 100%;
+		max-width: 730px;
 		padding: 2rem;
 		& h2 {
 			text-align: center;
@@ -189,6 +208,7 @@ aside {
 
 		& p,
 		& a {
+			width: 100%;
 			text-align: center;
 			word-wrap: normal;
 		}
@@ -272,9 +292,112 @@ aside {
 }
 
 .content__noticias {
-	width: 100;
+	width: 90%;
+}
+
+.content__preguntas {
+	width: 100%;
+}
+
+.accordion {
+	margin: auto;
+	width: 90%;
+	max-width: 900px;
+
+	&-item {
+		margin: 0.5rem;
+	}
+
+	&-body {
+		font-size: $font-size-s;
+	}
+
+	&-button {
+		font-size: $font-size-s;
+	}
+}
+
+.content__contacto,
+.contacto {
+	width: 100%;
+	margin: auto;
+	font-size: $font-size-s;
+	text-align: center;
+	gap: $gap;
+
+	&__container-escribenos {
+		font-size: $font-size-m;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: calc($gap/2);
+		padding: 1rem;
+	}
+
+	&__email-filantropia {
+		cursor: pointer;
+		color: $primary-color !important;
+		//transition: all ease 2s;
+	}
+
+	&__email-filantropia:hover {
+		border-bottom: 1px solid $primary-color;
+	}
+
+	&__container-info {
+		width: 90%;
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: $gap;
+	}
+
+	&__card {
+		min-width: 350px;
+		min-height: 300px;
+		border: 2px solid $tertiary-color;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	&__img {
+		width: 100%;
+		max-width: 130px;
+	}
 }
 
 .footer {
 	background-color: $background-color;
+}
+
+@media (min-width: 768px) {
+	.header {
+		&__title {
+			font-size: $font-size-lt;
+		}
+	}
+
+	.content__info {
+		& article {
+			& iframe {
+				max-width: 500px;
+				height: 300px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.header {
+		&__title {
+			font-weight: bold;
+		}
+	}
 }

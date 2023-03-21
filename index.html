@@ -270,14 +270,296 @@
 
 			<section class="content__noticias">
 				<h2>Noticias</h2>
+
+				<div
+					id="carouselExampleCaptions2"
+					class="carousel slide"
+					data-bs-ride="false"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions2"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions2"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions2"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+
+						<button
+							type="button"
+							data-bs-target="#carouselExampleCaptions2"
+							data-bs-slide-to="3"
+							aria-label="Slide 4"
+						></button>
+					</div>
+
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="assets/img/img300pxExample.jpg"
+								class="d-block w-100"
+								alt=""
+							/>
+							<div class="carousel-caption">
+								<p>Noticia 1</p>
+								<a href="">Ver más</a>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<img
+								src="assets/img/img300pxExample.jpg"
+								class="d-block w-100"
+								alt=""
+							/>
+							<div class="carousel-caption">
+								<p>Noticia 2</p>
+								<a href="">Ver más</a>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<img
+								src="assets/img/img300pxExample.jpg"
+								class="d-block w-100"
+								alt=""
+							/>
+							<div class="carousel-caption">
+								<p>Noticia 3</p>
+								<a href="">Ver más</a>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<img
+								src="assets/img/img300pxExample.jpg"
+								class="d-block w-100"
+								alt=""
+							/>
+							<div class="carousel-caption">
+								<p>Noticia 4</p>
+								<a href="">Ver más</a>
+							</div>
+						</div>
+					</div>
+
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleCaptions2"
+						data-bs-slide="prev"
+					>
+						<span
+							class="prev carousel-control-prev-icon"
+							aria-hidden="true"
+						></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+
+					<button
+						class="prev_slide carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleCaptions2"
+						data-bs-slide="next"
+					>
+						<span
+							class="next carousel-control-next-icon"
+							aria-hidden="true"
+						></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
 			</section>
 
-			<section class="content__preguntas">
-				<h2>Preguntas frecuentes</h2>
+			<section class="content__preguntas preguntas">
+				<h2 class="preguntas__title">Preguntas frecuentes</h2>
+				<div class="accordion" id="accordionExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button
+								class="accordion-button"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseOne"
+								aria-expanded="true"
+								aria-controls="collapseOne"
+							>
+								¿Qué es una donación?
+							</button>
+						</h2>
+						<div
+							id="collapseOne"
+							class="accordion-collapse collapse show"
+							aria-labelledby="headingOne"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								Es el acto por el cual una persona natural o jurídica ,
+								denominada donante, transfiere a título gratuito una parte de
+								sus bienes a otra que la acepta, denominado donatario.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingTwo">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseTwo"
+								aria-expanded="false"
+								aria-controls="collapseTwo"
+							>
+								¿Quiénes pueden donar?
+							</button>
+						</h2>
+						<div
+							id="collapseTwo"
+							class="accordion-collapse collapse"
+							aria-labelledby="headingTwo"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								Todas las personas interesadas en apoyar a la Universidad EAFIT,
+								entre ellos estudiantes, egresados, empleados, aliados, y
+								personas jurídicas como organizaciones y fundaciones.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#collapseThree"
+								aria-expanded="false"
+								aria-controls="collapseThree"
+							>
+								¿Qué beneficios tributarios obtengo al realizar una donación?
+							</button>
+						</h2>
+						<div
+							id="collapseThree"
+							class="accordion-collapse collapse"
+							aria-labelledby="headingThree"
+							data-bs-parent="#accordionExample"
+						>
+							<div class="accordion-body">
+								La Universidad EAFIT, en su calidad de donataria y en
+								cumplimiento de la ley fiscal, otorga el certificado de donación
+								independientemente de su monto, debidamente suscrito por el
+								revisor fiscal, el cual dará lugar a un descuento sobre el
+								impuesto de renta y complementarios, bien sea persona natural o
+								jurídica. overflow.
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 
-			<section class="content__contacto">
-				<h2>Contacto</h2>
+			<section class="content__contacto contacto">
+				<h2 class="contacto__title">Contacto</h2>
+				<div class="contacto__container-escribenos">
+					<span>Escribenos a</span>
+					<a
+						class="contacto__email-filantropia"
+						href="mailto:cfilantropia@eafit.edu.co"
+						>cfilantropia@eafit.edu.co</a
+					>
+				</div>
+
+				<div class="contacto__container-info">
+					<div class="contacto__card">
+						<img
+							class="contacto__img"
+							src="assets/img/contacto/MariaClaraCeballos.png"
+							alt=""
+						/>
+						<h3 class="contacto__nombre">Maria Clara Ceballos Arango</h3>
+						<p class="contacto__cargo">Jefa de filantropia EAFIT</p>
+						<p class="contacto__num">
+							Teléfono: (57) 604 261 9500, extensión 8857
+						</p>
+						<a class="contacto__email" href="">mceball4@eafit.edu.co</a>
+						<a href="contacto__email2">cfilantropia@eafit.edu.co</a>
+					</div>
+
+					<div class="contacto__card">
+						<img
+							class="contacto__img"
+							src="assets/img/contacto/MariaCristinaMontoya.png"
+							alt=""
+						/>
+						<h3 class="contacto__nombre">María Cristina Montoya Vélez</h3>
+						<p class="contacto__cargo">Coordinadora Administrativa</p>
+						<a class="contacto__email" href="">mmonto41@eafit.edu.co</a>
+						<a href="contacto__email2">cfilantropia@eafit.edu.co</a>
+					</div>
+
+					<div class="contacto__card">
+						<img
+							class="contacto__img"
+							src="assets/img/contacto/LuzAdrianaYepes.png"
+							alt=""
+						/>
+						<h3 class="contacto__nombre">Luz Adriana Yepes Arias</h3>
+						<p class="contacto__cargo">Analista de Información</p>
+						<a class="contacto__email" href="">layepesa@eafit.edu.co</a>
+					</div>
+
+					<div class="contacto__card">
+						<img
+							class="contacto__img"
+							src="assets/img/contacto/LizyennyOsorio.png"
+							alt=""
+						/>
+						<h3 class="contacto__nombre">Lizyenny Osorio Álvarez</h3>
+						<p class="contacto__cargo">Analista de Voluntariado</p>
+						<a class="contacto__email" href="">losorioa@eafit.edu.co</a>
+					</div>
+
+					<div class="contacto__card">
+						<img
+							class="contacto__img"
+							src="assets/img/contacto/MarcelaBuilesToro.png"
+							alt=""
+						/>
+						<h3 class="contacto__nombre">Marcela Builes Toro</h3>
+						<p class="contacto__cargo">Analista de comunicaciones</p>
+						<a class="contacto__email" href="">mbuiles10@eafit.edu.co</a>
+						<a href="contacto__email2">filantropiacomunica@eafit.edu.co</a>
+					</div>
+
+					<div class="contacto__card">
+						<img
+							class="contacto__img"
+							src="assets/img/contacto/NuryAndreaSepulveda.png"
+							alt=""
+						/>
+						<h3 class="contacto__nombre">Nury Andrea Sepúlveda Muñoz</h3>
+						<p class="contacto__cargo">Auxiliar Administrativa</p>
+						<p class="contacto__num">
+							Teléfono: (57) 604 2619500, extensión 9297
+						</p>
+						<a class="contacto__email" href="">nsepulv2@eafit.edu.co</a>
+					</div>
+				</div>
 			</section>
 
 			<section class="aliados">
