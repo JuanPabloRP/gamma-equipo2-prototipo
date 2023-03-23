@@ -20,7 +20,7 @@
 }
 .page__info {
   font-style: "Poppins", sans-serif;
-  font-size: 2.2vh;
+  font-size: 1rem;
   text-align: center;
   margin-block-start: 18px;
 }
@@ -38,11 +38,11 @@
 
 .document {
   font-family: "Poppins", sans-serif;
-  font-size: 2.8vh;
+  font-size: 2rem;
   text-align: center;
 }
 .document__consultation {
-  font-size: 5vh;
+  font-size: 2.5rem;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   border: 1px solid rgb(83, 83, 83);
@@ -53,6 +53,7 @@
 }
 .document__tipe {
   font-family: "Poppins", sans-serif;
+  font-size: 2rem;
   height: auto;
 }
 .document__tipe--num {
@@ -71,7 +72,7 @@
 }
 
 .left {
-  font-size: 2.4vh;
+  font-size: 1rem;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   border-radius: 5px;
@@ -84,7 +85,7 @@
 }
 
 .right {
-  font-size: 2.4vh;
+  font-size: 1rem;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   border-radius: 5px;
@@ -102,7 +103,7 @@
   height: 50vh;
 }
 .donation__do {
-  font-size: 2.8vh;
+  font-size: 1rem;
   font-family: "Sintony", sans-serif;
   background-color: #537fe7;
   font-weight: 800;
@@ -111,7 +112,7 @@
 }
 
 .footerinformation {
-  margin-top: 30px;
+  margin-top: 3px;
   display: block;
   font-family: "Montserrat", sans-serif;
   background-color: #e9f8f9;
@@ -140,12 +141,12 @@
 
 .help {
   font-family: "Sintony", sans-serif;
+  font-size: 1rem;
   background-color: #537fe7;
   color: white;
   font-weight: 800;
   text-align: center;
   height: 6vh;
-  flex-direction: row;
 }
 
 /*# sourceMappingURL=historialdonaciones.css.map */
