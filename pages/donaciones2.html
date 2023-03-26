@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donaciones</title>
+  </head>
+  <body>
+    <main class="donaciones2">
+      <header>
+        <div class="titulo">
+          <h1>Filantropia eafit</h1>
+        </div>
+        <div class="frasetop">
+          <h3>
+            <strong>Transformando vidas</strong> a través de tus aportes para
+            que alguién más alcance sus sueños
+          </h3>
+        </div>
+      </header>
+      <section class="contenido">
+        <div class="selectorpagina">
+          <h3>Cuentanos sobre tí</h3>
+          <h3>¿Qué te motiva?</h3>
+        </div>
+        <div class="infodonacion">
+          <h3>Información de donación</h3>
+          <div class="infodonacion__causa">
+            <form action="selectcausa">
+              <label for="causafondo">Fondo donación</label> <br />
+              <select name="causa" id="causafondo">
+                <option value="equidad">Equidad social e inclusión</option>
+                <option value="ciencia">
+                  Ciencia, tecnología e innovación
+                </option>
+                <option value="transformacion">Transformación humanista</option>
+                <option value="inspiracion">Inspiración - voluntariado</option>
+              </select>
+            </form>
+          </div>
+          <div class="infodonacion__medio">
+            <form action="selectmedio">
+              <label for="mediofil"
+                >Medio por el que se enteró del centro de Filantropía</label
+              >
+              <br />
+              <select name="medio" id="mediofil">
+                <option value="amigo-conocido">Amigo/Conocido</option>
+                <option value="empleado-universidad">
+                  Empleado de la universidad
+                </option>
+                <option value="pagina">Página web</option>
+                <option value="multimedia">Contenido multimedia</option>
+              </select>
+            </form>
+          </div>
+          <div class="infodonacion__valor">
+            <form action="valordonacion">
+              <label for="valordonacion">Valor a donar</label> <br />
+              <input id="valordonacion" type="text" name="campotexto" />
+            </form>
+          </div>
+          <div class="infodonacion__recurrencia">
+            <div class="infodonacion__recurrencia--titulo">
+              <h5>Recurrencia</h5>
+            </div>
+            <button>Si</button>
+            <button>No</button>
+          </div>
+          <div class="infodonacion__periodicidad">
+            <form action="periodicidad">
+              <label for="periodicidad">Periodicidad</label> <br />
+              <input id="periodicidad" type="text" name="campotexto" />
+            </form>
+          </div>
+        </div>
+        <div class="formapago">
+          <h3>Forma de pago</h3>
+          <div class="formapago__linea">
+            <div class="formapago__linea--titulo">
+              <h4>En línea</h4>
+            </div>
+            <button>Pagar</button>
+            <button class="visa">
+              <img
+                src="https://1000marcas.net/wp-content/uploads/2019/12/VISA-Logo.png"
+                alt="visa"
+              />
+            </button>
+            <button class="mastercard">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png"
+                alt="mastercard"
+              />
+            </button>
+            <button class="americanexpress">
+              <img
+                src="https://1000marcas.net/wp-content/uploads/2020/03/logo-American-Express.png"
+                alt="americanexpress"
+              />
+            </button>
+            <button class="pse">
+              <img
+                src="https://static.wixstatic.com/media/7dc3a7_0e8c565b27174a04959e01b2a97656ea~mv2.png/v1/fill/w_314,h_312,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7dc3a7_0e8c565b27174a04959e01b2a97656ea~mv2.png"
+                alt="pse"
+              />
+            </button>
+            <button class="dinnersclub">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Diners_Club_Logo3.svg"
+                alt="dinnersclubinternational"
+              />
+            </button>
+          </div>
+          <div class="formapago__barras">
+            <div class="formapago__barras--titulo">
+              <h4>Código de barras</h4>
+            </div>
+            <button>Generar</button>
+          </div>
+        </div>
+        <div class="terminos">
+          <form action="terminosycondiciones">
+            <input type="radio" id="terminos" />
+            <label for="terminos">Acepta terminos y condiciones</label>
+          </form>
+        </div>
+        <div class="botonesprincipales">
+          <div class="botonesprincipales__atras">
+            <button>Atrás</button>
+          </div>
+          <div class="botonespincipales__realizardonacion">
+            <button>Realizar donación</button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="infogeneral">
+          <h2>Filantropía</h2>
+          <h3>Universidad eafit</h3>
+          <h3>www.eafit.edu/filantropia</h3>
+        </div>
+        <div class="contacto">
+          <h2>Teléfono</h2>
+          <h3>(574)261 9500Ext. 9297</h3>
+        </div>
+        <div class="direccion">
+          <h2>Dirección</h2>
+          <h3>Carrera 48 C 10 sur 106</h3>
+          <h3>Casa 8 Egresados</h3>
+          <h3>Barrio la Aguacatala II</h3>
+          <h3>Medellín-Colombia</h3>
+        </div>
+        <div class="email">
+          <h3>cfilantropia@eafit.edu.co</h3>
+        </div>
+        <div class="frasebot">
+          <h2>Ayuda a volar,empieza a donar</h2>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
