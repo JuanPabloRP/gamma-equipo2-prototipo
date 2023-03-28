@@ -1,0 +1,490 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Montserrat:wght@300&family=Poppins:wght@300&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&family=Sintony&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.donaciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+
+  header {
+    background-color: #e9f8f9;
+    height: 20.4vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .titulo {
+      font-family: "Shadows Into Light", cursive;
+      font-size: 4.6vh;
+      color: #537fe7;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-left: 7.9vh;
+    }
+
+    .frasetop {
+      strong {
+        font-family: "Fasthand", cursive;
+        font-size: 4.5vh;
+      }
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .contenido {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    width: 70%;
+
+    .selectorpagina {
+      display: flex;
+      justify-content: space-between;
+      font-family: "Montserrat", sans-serif;
+      margin-top: 70px;
+
+      .selectorpagina1 {
+        background-color: black;
+        color: #ffffff;
+        border-bottom-right-radius: 10px;
+        border-top: 10px;
+        display: flex;
+        justify-content: center;
+        width: 25vh;
+      }
+
+      .selectorpagina2 {
+        background-color: #c0eef2;
+        border-bottom-right-radius: 10px;
+        border-top: 10px;
+        display: flex;
+        justify-content: center;
+        width: 25vh;
+      }
+    }
+
+    .identificacion {
+      .identificacion__titulo {
+        font-family: "Sintony", sans-serif;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        width: 45vh;
+      }
+
+      .fila1 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .identificacion__pais {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        select {
+          background-color: #e9f8f9;
+          width: 24vh;
+          height: 6vh;
+          border-radius: 6px;
+        }
+      }
+      .identificacion__documento {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+
+        select {
+          background-color: #e9f8f9;
+          width: 24vh;
+          height: 6vh;
+          border-radius: 6px;
+        }
+      }
+
+      .identificacion__numero {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        input {
+          background-color: #e9f8f9;
+          width: 24vh;
+          height: 6vh;
+          border-radius: 6px;
+        }
+      }
+    }
+
+    .datos {
+      .datos__titulo {
+        font-family: "Sintony", sans-serif;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        width: 45vh;
+      }
+
+      .columna1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .datos__primernombre {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+      }
+      input {
+        background-color: #e9f8f9;
+        width: 24vh;
+        height: 6vh;
+        border-radius: 6px;
+      }
+
+      .datos__segundonombre {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+      }
+
+      .datos__primerapellido {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+      }
+
+      .datos__segundoapellido {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+      }
+
+      .columna2 {
+        display: flex;
+        flex-flow: column wrap;
+        margin-left: 70px;
+        select {
+          background-color: #e9f8f9;
+          width: 24vh;
+          height: 6vh;
+          border-radius: 6px;
+        }
+      }
+
+      .datos__genero {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+      }
+
+      .datos__estadocivil {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+      }
+
+      .datos__telefono {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+      }
+
+      .datos__correo {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+      }
+    }
+
+    .nacimiento {
+      .nacimiento__titulo {
+        font-family: "Sintony", sans-serif;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        width: 45vh;
+      }
+
+      .columnas1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        input {
+          background-color: #e9f8f9;
+          width: 24vh;
+          height: 6vh;
+          border-radius: 6px;
+        }
+
+        select {
+          background-color: #e9f8f9;
+          width: 24vh;
+          height: 6vh;
+          border-radius: 6px;
+        }
+      }
+
+      .columna3 {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        margin-right: 70px;
+      }
+
+      .nacimiento__fechadenacimiento {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+
+        flex-flow: column wrap;
+      }
+
+      .nacimiento__pais {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+
+        flex-flow: column wrap;
+      }
+
+      .columna4 {
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+      }
+
+      .nacimiento__departamento {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+
+        flex-flow: column wrap;
+      }
+
+      .nacimiento__ciudad {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+
+        flex-flow: column wrap;
+      }
+    }
+
+    .residencia {
+      .residencia__titulo {
+        font-family: "Sintony", sans-serif;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+        width: 45vh;
+      }
+
+      .columnas2 {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+          background-color: #e9f8f9;
+          width: 24vh;
+          height: 6vh;
+          border-radius: 6px;
+        }
+
+        select {
+          background-color: #e9f8f9;
+          width: 24vh;
+          height: 6vh;
+          border-radius: 6px;
+        }
+      }
+
+      .residencia__direccion {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+
+        flex-flow: column wrap;
+      }
+
+      .residencia__paisresidencia {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+
+        flex-flow: column wrap;
+      }
+
+      .residencia__departamento {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+
+        flex-flow: column wrap;
+      }
+
+      .residencia__ciudad {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        display: flex;
+
+        flex-flow: column wrap;
+      }
+
+      .columna4 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 70px;
+      }
+
+      .columna5 {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .boton {
+      padding: 10px 20px;
+      font-size: 20px;
+      background-color: #428bca;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 15%;
+      width: 15vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: #537fe7;
+      }
+
+      &:active {
+        background-color: blue;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #e9f8f9;
+    width: 100%;
+    height: 45vh;
+
+    .infogeneral {
+      h2 {
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        font-size: 4.5vh;
+      }
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-flow: column;
+      font-size: 2.5vh;
+    }
+
+    .contacto {
+      h2 {
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        font-size: 4.5vh;
+      }
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: start;
+      font-size: 2.5vh;
+    }
+
+    .direccion {
+      h2 {
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        font-size: 4.5vh;
+      }
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 2vh;
+    }
+
+    .email {
+      h2 {
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        font-size: 4.5vh;
+      }
+      font-family: "Poppins", sans-serif;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: start;
+      font-size: 2.5vh;
+    }
+  }
+
+  .frasebot {
+    font-family: "Lilita One", cursive;
+    font-size: 2.8vh;
+    width: 100%;
+    background-color: #537fe7;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+}
